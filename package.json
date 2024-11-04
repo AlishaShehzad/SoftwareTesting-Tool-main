@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "firebase-tools": "^13.23.1"
+  },
+  "dependencies": {
+    "@firebasegen/default-connector": "file:dataconnect-generated/js/default-connector"
+  }
+}

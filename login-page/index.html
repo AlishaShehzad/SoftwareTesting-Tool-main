@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div id="signupFormContainer" class="form-box">
+            <h1 class="title">Sign Up</h1>
+            <div class="underline"></div>
+            <form>
+                <div class="input-group">
+                    <div class="input-field namefield">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" id="signup-email" placeholder="Email">    
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-lock-open-alt'></i>
+                        <input type="password" id="signup-password" placeholder="Password">
+                    </div>
+                    <p><span class="text">Password Suggestion </span><a href="#"> Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signup-btn">Sign Up</button>
+                    <button type="button" id="switch-to-signin">Sign In</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="signinFormContainer" class="form-box" style="display: none;">
+            <h1 class="title">Sign In</h1>
+            <div class="underline"></div>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" id="signin-email" placeholder="Email">    
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-lock-open-alt'></i>
+                        <input type="password" id="signin-password" placeholder="Password">
+                    </div>
+                    <p><span class="text">Forgot Password?</span></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signin-btn">Sign In</button>
+                    <button type="button" id="switch-to-signup">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase App and Auth SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
